@@ -62,7 +62,7 @@ export const loginHandler = async (req, res) => {
 }
 
 export const registerHandler = async (req, res) => {
-    try {Shresth-Binmile/Auth-App-Backend
+    try {
         const errors = validationResult(req)
         if (!errors.isEmpty()) {
             return res.status(codes.conflict).json(errors)
